@@ -9,7 +9,7 @@ public class Activity14 {
 
 	public static void main(String[] args) throws IOException {
 		try {
-            File file = new File("C:\\Users\\VIDHYAKRISHNAMOORTHY\\Documents\\Automation Workspace\\IBM FST Projects\\newfile.txt");
+            File file = new File("C:\\Users\\0024C1744\\Downloads\\Training Material\\IBM FST Training\\Selenium\\newfile.txt");
             boolean fStatus = file.createNewFile();
             if(fStatus) {
                 System.out.println("File created successfully!");
@@ -18,7 +18,7 @@ public class Activity14 {
             }
  
             FileUtils.write(file,"This is a new file", "UTF8");
-            File fileUtil = FileUtils.getFile("C:\\Users\\VIDHYAKRISHNAMOORTHY\\Documents\\Automation Workspace\\IBM FST Projects\\newfile.txt");
+            File fileUtil = FileUtils.getFile("C:\\Users\\0024C1744\\Downloads\\Training Material\\IBM FST Training\\Selenium\\newfile.txt");
             
             System.out.println("Data in file: " + FileUtils.readFileToString(fileUtil, "UTF8"));
  
